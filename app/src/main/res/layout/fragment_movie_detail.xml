@@ -59,15 +59,15 @@
                         android:text="@string/fragment_movie_detail_trailer_button_text" />
 
                     <ToggleButton
-                        android:id="@+id/newsDetailsToggleFavorite"
-                        android:layout_width="@dimen/orange_news_details_toggle_dimen"
-                        android:layout_height="@dimen/orange_news_details_toggle_dimen"
+                        android:id="@+id/movieDetailsToggleFavorite"
+                        android:layout_width="@dimen/movie_details_toggle_dimen"
+                        android:layout_height="@dimen/movie_details_toggle_dimen"
                         android:layout_alignParentTop="true"
                         android:layout_alignParentEnd="true"
-                        android:layout_marginStart="@dimen/orange_news_details_toggle_margin"
-                        android:layout_marginTop="@dimen/orange_news_details_toggle_margin"
-                        android:layout_marginEnd="@dimen/orange_news_details_toggle_margin"
-                        android:layout_marginBottom="@dimen/orange_news_details_toggle_margin"
+                        android:layout_marginStart="@dimen/movie_details_toggle_margin"
+                        android:layout_marginTop="@dimen/movie_details_toggle_margin"
+                        android:layout_marginEnd="@dimen/movie_details_toggle_margin"
+                        android:layout_marginBottom="@dimen/movie_details_toggle_margin"
                         android:background="@drawable/button_favorite_toggle"
                         android:focusable="false"
                         android:focusableInTouchMode="false"

@@ -2,12 +2,10 @@ package com.android.emovie.application.data.db
 
 import android.os.Build
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.lifecycle.Observer
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SmallTest
-import com.android.emovie.data.model.db.FavoriteMovie
 import com.android.emovie.util.ObjectMocks.getActor
 import com.android.emovie.util.ObjectMocks.getFavoriteMovie
 import com.android.emovie.util.getOrAwaitValueTest
@@ -35,7 +33,7 @@ class LocalDataSourceTest {
             ApplicationProvider.getApplicationContext(),
             DataBase::class.java
         ).allowMainThreadQueries().build()
-        dao = database.newsDAO()
+        dao = database.moviesDAO()
     }
 
     @After
@@ -44,12 +42,12 @@ class LocalDataSourceTest {
     }
 
     @Test
-    fun testDao_insertFavoriteNewsMovie_insertSuccess() = runBlockingTest {
+    fun testDao_insertMovieFavorite_insertSuccess() = runBlockingTest {
         val movie = getFavoriteMovie()
         dao.insertFavoriteMovies(movie)
-        val favoriteNews = dao.getAllFavorites().getOrAwaitValueTest()
+        val movieFavorite = dao.getAllFavorites().getOrAwaitValueTest()
 
-        Assert.assertTrue(favoriteNews.contains(movie))
+        Assert.assertTrue(movieFavorite.contains(movie))
     }
 
     @Test

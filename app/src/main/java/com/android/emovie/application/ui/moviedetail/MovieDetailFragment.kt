@@ -63,7 +63,7 @@ class MovieDetailFragment : Fragment(R.layout.fragment_movie_detail) {
             }
 
             viewModel.checkMovie(this).observe(viewLifecycleOwner) { exists ->
-                binding.newsDetailsToggleFavorite.isChecked = exists
+                binding.movieDetailsToggleFavorite.isChecked = exists
             }
 
             viewModel.getVideos(this).observe(viewLifecycleOwner) { response ->
@@ -134,8 +134,8 @@ class MovieDetailFragment : Fragment(R.layout.fragment_movie_detail) {
                 (binding.movieDetailRevenue.parent as LinearLayout).visibility = View.GONE
             }
 
-            binding.newsDetailsToggleFavorite.setOnClickListener {
-                if (binding.newsDetailsToggleFavorite.isChecked) {
+            binding.movieDetailsToggleFavorite.setOnClickListener {
+                if (binding.movieDetailsToggleFavorite.isChecked) {
                     viewModel.addToFavorite(movieDetail)
                     castMovie?.let { actorList ->
                         viewModel.addLocalCast(movieDetail.id, actorList)

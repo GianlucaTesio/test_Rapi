@@ -31,7 +31,7 @@ object AppModule {
 
     @Singleton
     @Provides
-    fun provideNewsDAO(db: DataBase) = db.newsDAO()
+    fun provideMoviesDAO(db: DataBase) = db.moviesDAO()
 
     @Singleton
     @Provides

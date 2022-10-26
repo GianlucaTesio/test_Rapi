@@ -6,41 +6,41 @@ import com.android.emovie.data.model.db.Cast
 import com.android.emovie.data.model.db.FavoriteMovie
 import javax.inject.Inject
 
-class LocalDataSource @Inject constructor(private val newsDAO: MoviesDAO) {
+class LocalDataSource @Inject constructor(private val moviesDAO: MoviesDAO) {
 
     suspend fun insertFavoriteMovies(favoriteMovie: FavoriteMovie) {
-        newsDAO.insertFavoriteMovies(favoriteMovie)
+        moviesDAO.insertFavoriteMovies(favoriteMovie)
     }
 
     suspend fun insertActor(actor: Actor) {
-        newsDAO.insertActor(actor)
+        moviesDAO.insertActor(actor)
     }
 
     suspend fun insertCast(cast: Cast) {
-        newsDAO.insertCast(cast)
+        moviesDAO.insertCast(cast)
     }
 
     suspend fun checkFavorite(idMovie: String): Int {
-        return newsDAO.checkFavoriteExists(idMovie)
+        return moviesDAO.checkFavoriteExists(idMovie)
     }
 
     fun getAllFavoriteMovies(): LiveData<List<FavoriteMovie>> {
-        return newsDAO.getAllFavorites()
+        return moviesDAO.getAllFavorites()
     }
 
     suspend fun getActor(idActor: String): Actor {
-        return newsDAO.getActor(idActor)
+        return moviesDAO.getActor(idActor)
     }
 
     suspend fun getActorFromMovie(idCast: String): List<String> {
-        return newsDAO.getActorFromMovie(idCast)
+        return moviesDAO.getActorFromMovie(idCast)
     }
 
     suspend fun getFavoriteMovie(idMovie: String): FavoriteMovie {
-        return newsDAO.getFavoriteMovie(idMovie)
+        return moviesDAO.getFavoriteMovie(idMovie)
     }
 
     suspend fun removeFavorite(id: String) {
-        newsDAO.removeFavorite(id)
+        moviesDAO.removeFavorite(id)
     }
 }

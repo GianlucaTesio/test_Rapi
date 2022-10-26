@@ -19,8 +19,8 @@
     <dimen name="movies_item_recycler_view_network_state_padding">8dp</dimen>
     <dimen name="movie_title_start_margin">10dp</dimen>
     <dimen name="favorite_fragment_progress_bar_padding_top">150dp</dimen>
-    <dimen name="orange_news_details_toggle_dimen">48dp</dimen>
-    <dimen name="orange_news_details_toggle_margin">16dp</dimen>
+    <dimen name="movie_details_toggle_dimen">48dp</dimen>
+    <dimen name="movie_details_toggle_margin">16dp</dimen>
     <dimen name="movies_progress_bar_padding_top">50dp</dimen>
     <dimen name="top_rated_movies_progress_bar_padding_top">150dp</dimen>
 
