@@ -64,11 +64,9 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$navigationComponentVersion"
     implementation "androidx.legacy:legacy-support-v4:$legacyVersion"
 
-    // Retrofit and RxJava
+    // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$retrofitGsonVersion"
-    implementation "io.reactivex.rxjava2:rxandroid:$rxjava2Version"
-    implementation "io.reactivex.rxjava2:rxjava:$rxjava2Version"
 
     // Paging
     implementation "androidx.paging:paging-runtime-ktx:$pagingVersion"

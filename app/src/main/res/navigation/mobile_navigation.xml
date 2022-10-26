@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/navigation_movies"
         android:name="com.android.emovie.application.ui.movies.MoviesFragment"
-        android:label="eMovie"
+        android:label="@string/app_name"
         tools:layout="@layout/fragment_movies">
         <action
             android:id="@+id/action_upcomingMovies_to_movieDetailFragment"
@@ -23,7 +23,6 @@
                 app:nullable="false" />
         </action>
     </fragment>
-
 
     <fragment
         android:id="@+id/movieDetailFragment"
@@ -43,15 +42,17 @@
                 app:nullable="false" />
         </action>
     </fragment>
+
     <fragment
         android:id="@+id/actorDetailFragment"
         android:name="com.android.emovie.application.ui.actordetail.ActorDetailFragment"
         android:label="@string/title_navigation_actorDetail"
         tools:layout="@layout/fragment_actor_detail" />
+
     <fragment
         android:id="@+id/navigation_favorite"
         android:name="com.android.emovie.application.ui.favoritemovies.FavoriteFragment"
-        android:label="FavoriteFragment"
+        android:label="@string/title_navigation_favorites"
         tools:layout="@layout/fragment_favorites">
         <action
             android:id="@+id/action_navigation_favorite_to_movieDetailFragment"

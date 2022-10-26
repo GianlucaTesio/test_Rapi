@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">eMovie</string>
     <string name="title_navigation_movies">Movies</string>
+    <string name="title_navigation_favorites">Favorites</string>
     <string name="title_popularMovies">Popular</string>
     <string name="title_topRated">Recommended for you</string>
     <string name="title_upcomingMovies">Upcoming</string>

@@ -8,6 +8,7 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.SmallTest
 import com.android.emovie.data.model.db.FavoriteMovie
+import com.android.emovie.util.ObjectMocks.getActor
 import com.android.emovie.util.ObjectMocks.getFavoriteMovie
 import com.android.emovie.util.getOrAwaitValueTest
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -67,5 +68,14 @@ class LocalDataSourceTest {
         dao.removeFavorite(movie.id)
 
         Assert.assertTrue(dao.getAllFavorites().getOrAwaitValueTest().isEmpty())
+    }
+
+    @Test
+    fun testDao_insertAndGetActor_insertAndGetSuccess() = runBlockingTest {
+        val actor = getActor()
+        dao.insertActor(actor)
+        val actorDB = dao.getActor(actor.id)
+
+        Assert.assertNotNull(actorDB)
     }
 }
