@@ -1,3 +1,32 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="movie_detail_diameter_circle_image_view">80dp</dimen>
+    <dimen name="movie_detail_corner_radius_image_view">40dp</dimen>
+    <dimen name="movie_detail_cast_padding_image_view">5dp</dimen>
+    <dimen name="movie_detail_height_image_view">500dp</dimen>
+    <dimen name="movie_detail_margin_top">2dp</dimen>
+    <dimen name="movie_detail_margin">8dp</dimen>
+    <dimen name="movie_detail_margin_top_title">15dp</dimen>
+    <dimen name="movie_detail_margin_start_description">2dp</dimen>
+    <dimen name="movie_detail_margin_top_description">2dp</dimen>
+    <dimen name="movie_detail_margin_bottom_cast_title">5dp</dimen>
+    <dimen name="movie_margin_recycler_view">4dp</dimen>
+    <dimen name="movie_item_padding_recycler_view">8dp</dimen>
+    <dimen name="movie_item_height_image_view">200dp</dimen>
+    <dimen name="movie_item_height_card_view">8dp</dimen>
+    <dimen name="actor_detail_height_image_view">500dp</dimen>
+    <dimen name="actor_detail_margin">8dp</dimen>
+    <dimen name="movies_item_recycler_view_network_state_padding">8dp</dimen>
+    <dimen name="movie_title_start_margin">10dp</dimen>
+    <dimen name="favorite_fragment_progress_bar_padding_top">150dp</dimen>
+    <dimen name="orange_news_details_toggle_dimen">48dp</dimen>
+    <dimen name="orange_news_details_toggle_margin">16dp</dimen>
+    <dimen name="movies_progress_bar_padding_top">50dp</dimen>
+    <dimen name="top_rated_movies_progress_bar_padding_top">150dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="movie_title_text_size">20sp</dimen>
 </resources>

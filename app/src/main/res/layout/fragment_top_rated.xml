@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".application.ui.toprated.TopRatedFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/movie_title_start_margin"
+        android:text="@string/title_topRated"
+        android:textSize="@dimen/movie_title_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButtonSpanish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_filter_toggle"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textOff="@string/fragment_top_rated_filter_spanish"
+            android:textOn="@string/fragment_top_rated_filter_spanish" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonReleaseCurrentYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textColor="@drawable/button_filter_toggle_text"
+            android:background="@drawable/button_filter_toggle"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textOff="@string/fragment_top_rated_filter_release_year"
+            android:textOn="@string/fragment_top_rated_filter_release_year" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingTop="@dimen/top_rated_movies_progress_bar_padding_top" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/moviesRecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/movie_margin_recycler_view"
+        android:scrollbars="vertical" />
+</LinearLayout>

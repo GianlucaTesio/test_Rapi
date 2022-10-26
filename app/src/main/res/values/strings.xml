@@ -1,12 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Rapi Movies</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="app_name">eMovie</string>
+    <string name="title_navigation_movies">Movies</string>
+    <string name="title_popularMovies">Popular</string>
+    <string name="title_topRated">Recommended for you</string>
+    <string name="title_upcomingMovies">Upcoming</string>
+    <string name="title_nowPlayingMovies">Now Playing</string>
+    <string name="title_navigation_movieDetail">Movie Detail</string>
+    <string name="title_navigation_actorDetail">Actor Detail</string>
+    <string name="movie_detail_minutes">%1$d minutes</string>
+    <string name="movie_detail_vote_average_title">Vote average:</string>
+    <string name="movie_detail_date_title">Date:</string>
+    <string name="movie_detail_runtime_title">Runtime:</string>
+    <string name="movie_detail_budget_title">Budget:</string>
+    <string name="movie_detail_revenue_title">Revenue:</string>
+    <string name="movie_detail_cast_title">Cast</string>
+    <string name="movie_detail_info">Movie Information</string>
+    <string name="actor_detail_birthday">Birthday:</string>
+    <string name="actor_detail_popularity">Popularity:</string>
+    <string name="actor_detail_place_of_birth">Place of birth:</string>
+    <string name="actor_detail_homepage">Homepage:</string>
+    <string name="actor_detail_actor_information">Actor Information</string>
+    <string name="connection_problem">Connection Problem!</string>
+    <string name="favorites_empty">Favorites empty</string>
+    <string name="movies_item_recycler_view_network_state_retry">Retry</string>
+    <string name="movies_network_error_retry">Retry</string>
+    <string name="title_navigation_saved">Saved</string>
+    <string name="fragment_movie_detail_trailer_button_text">Watch trailer</string>
+    <string name="fragment_top_rated_filter_spanish">In spanish</string>
+    <string name="fragment_top_rated_filter_release_year">Released in 2022</string>
 </resources>

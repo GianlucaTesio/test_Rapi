@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_movies">
+
+    <fragment
+        android:id="@+id/navigation_movies"
+        android:name="com.android.emovie.application.ui.movies.MoviesFragment"
+        android:label="eMovie"
+        tools:layout="@layout/fragment_movies">
+        <action
+            android:id="@+id/action_upcomingMovies_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment">
+            <argument
+                android:name="idMovie"
+                app:argType="string"
+                app:nullable="false" />
+            <argument
+                android:name="flow"
+                app:argType="string"
+                app:nullable="false" />
+        </action>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.android.emovie.application.ui.moviedetail.MovieDetailFragment"
+        android:label="@string/title_navigation_movieDetail"
+        tools:layout="@layout/fragment_movie_detail">
+        <action
+            android:id="@+id/action_movieDetailFragment_to_actorDetailFragment"
+            app:destination="@id/actorDetailFragment">
+            <argument
+                android:name="idCast"
+                app:argType="string"
+                app:nullable="false" />
+            <argument
+                android:name="flow"
+                app:argType="string"
+                app:nullable="false" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/actorDetailFragment"
+        android:name="com.android.emovie.application.ui.actordetail.ActorDetailFragment"
+        android:label="@string/title_navigation_actorDetail"
+        tools:layout="@layout/fragment_actor_detail" />
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.android.emovie.application.ui.favoritemovies.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorites">
+        <action
+            android:id="@+id/action_navigation_favorite_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment">
+            <argument
+                android:name="idMovie"
+                app:argType="string"
+                app:nullable="false" />
+            <argument
+                android:name="flow"
+                app:argType="string"
+                app:nullable="false" />
+        </action>
+    </fragment>
+</navigation>
