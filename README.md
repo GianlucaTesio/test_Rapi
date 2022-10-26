@@ -8,7 +8,7 @@ If you really liked a movie and want to see it at some point, you can save it in
 
 **Data source:** https://developers.themoviedb.org/
 
-**APK:**  [OrangeNewsApp](https://drive.google.com/file/d/1DHBUWOvgFyN_aBk-cwArvydqW8nvpdEZ/view?usp=sharing) 
+**APK:**  [eMovie](https://drive.google.com/file/d/1-aTsbrieTEOT2Usa5IsSXBwiG_dtrMgj/view?usp=sharing) 
 
 ## Screenshots 
 
@@ -64,3 +64,8 @@ Characteristics that a clean code should have:
 ## Future improvements
 * Improve the design of the application
 * Add more unit tests
+
+## Clarifications
+* I had a problem with the original repository and had to create a new one. I lost all traceability of commits that's why few commits are seen.
+In the previous repository I was making commits for each progress.
+* I would have liked more time to add more unit tests.
